@@ -7,7 +7,7 @@ const forecastEl = document.getElementById('forecast');
 
 // Get weather data for a given city
 function getWeatherData(city) {
-  const queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
+  const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
   return fetch(queryURL)
     .then(function (response) {
       return response.json();
@@ -16,7 +16,7 @@ function getWeatherData(city) {
 
 // Get 5-day forecast data for a given city
 function getForecastData(city) {
-  const queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
+  const queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
   return fetch(queryURL)
     .then(function (response) {
       return response.json();
@@ -31,7 +31,7 @@ function createArticle(weatherInfo) {
   h3El.textContent = weatherInfo.name + ' (' + new Date(weatherInfo.dt * 1000).toLocaleDateString() + ')';
 
   const iconCode = weatherInfo.weather[0].icon;
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
   const iconEl = document.createElement('img');
   iconEl.src = iconUrl;
@@ -56,7 +56,7 @@ function createForecastCard(forecast) {
   h4El.textContent = new Date(forecast.dt * 1000).toLocaleDateString();
 
   const iconCode = forecast.weather[0].icon;
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
   const iconEl = document.createElement('img');
   iconEl.src = iconUrl;
