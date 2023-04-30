@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>    
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Column 1: Search Bar and City History -->
+            <div class="column">
+
+                <!--Search Bar Section-->
+                <section id="search-pane">
+                    <h2>Search for a City:</h2>
+                    <form id="search-city-form">
+                        <label for="search-bar"></label>
+                        <input id ="city" type="text" class="search-input">
+                        <button id="search-btn" class="search-btn">Search</button>
+                    </form>            
+                </section>
+
+                <!--Searched Cities saved list Section-->
+                <ul id="city-list">
+                    <h3>List of cities</h3>
+                    <!--here we populated a list of the cities that have been searched-->
+                </ul>
+            </div>
+                     
+         <!-- Column 2: Weather Info and Forecast -->
+         <div class="column">
+             <!--Selected City Information Display: City Name, Date, Temp, Wind, Humidity-->
+         
+             <section id="weather-info">
+                 <!--here we populated the weather info of the selected city-->
+                 <h3>Selected city info display</h3>
+             </section>
+         
+             <!-- 5-Day Forecast -->
+             <section id="forecast">
+                 <!--here we populated the list of cards with the next 5-day weather forecast for the selected city -->
+                 <h3>5-days weather forecast</h3>
+             </section>
+
+
+         </div>
+
+        </div>
+        
+    </main>    
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

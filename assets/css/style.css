@@ -1,0 +1,120 @@
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.search-btn {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 16px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: dodgerblue;
+    box-shadow:3px 3px rgb(204, 198, 198);
+    cursor: pointer;
+    
+  }
+
+  .search-btn:hover {
+    background-color: deepskyblue;
+  }
+
+  .search-input {
+    display: block;
+    margin: 5px 0;
+    width: 500px;  
+    height: 30px;  
+    border: 2px solid rgb(189, 184, 184);
+    border-radius: 5px;
+  }
+
+  #city-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #city-list li {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #city-list li:hover {
+    background-color: deepskyblue;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    padding: 10px;
+  }
+  
+  .column:nth-child(1) {
+    flex: 1;
+  }
+  
+  .column:nth-child(2) {
+    flex: 2;
+    margin-left: 10px;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast-card {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(20% - 10px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 0 10px;
+  }
+
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  
+    .column:nth-child(2) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    #forecast {
+      justify-content: space-between;
+    }
+  }
