@@ -28,7 +28,7 @@ THEN I am again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for selected cities.](/assets/images/WeatherAppDemo.png).
+![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for selected cities.](assets/images/WeatherAppDemo.png).
 
 ## App Link
 
